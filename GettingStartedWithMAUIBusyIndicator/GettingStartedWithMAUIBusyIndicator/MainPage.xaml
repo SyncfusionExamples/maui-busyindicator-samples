@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
+             x:Class="GettingStartedWithMAUIBusyIndicator.MainPage">
+    <ContentPage.Resources>
+        <Style TargetType="core:SfBusyIndicator">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BackgroundColor" Value="White"/>
+        </Style>
+    </ContentPage.Resources>
+    <Grid ColumnDefinitions="*,*,*,*,*" Padding="5" RowDefinitions="*,*,*" Background="#EEEEEE" WidthRequest="1000" HeightRequest="600">
+        <core:SfBusyIndicator Grid.Row="0" Grid.Column="0" AnimationType="CircularMaterial" IsRunning="True"/>
+
+        <core:SfBusyIndicator AnimationType="LinearMaterial" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" IsRunning="True"/>
+
+        <core:SfBusyIndicator AnimationType="Cupertino" Grid.Row="0" Grid.Column="3" IsRunning="True"/>
+
+        <core:SfBusyIndicator Title="Searching..." Grid.Row="1" Grid.Column="0" IsRunning="True"/>
+
+        <core:SfBusyIndicator Title="Searching..." TitlePlacement="Top"  Grid.Row="1" Grid.Column="1" IsRunning="True"/>
+
+        <core:SfBusyIndicator Title="Searching..." Grid.Row="1" TitleSpacing="50" Grid.Column="2" IsRunning="True"/>
+
+        <core:SfBusyIndicator Title="Searching..." FontSize="18" FontAttributes="Italic" Grid.Row="1" Grid.Column="3" IsRunning="True"/>
+
+        <core:SfBusyIndicator Title="Searching..." Grid.Row="2" Grid.Column="0" IsRunning="True" IndicatorColor="Red"/>
+
+        <core:SfBusyIndicator Title="Searching..." Grid.Row="2" Grid.Column="1" IsRunning="True" IndicatorColor="Red" FontAttributes="Bold" TextColor="Green"/>
+
+        <core:SfBusyIndicator Title="Searching..." Grid.Row="2" Grid.Column="2" IsRunning="True" IndicatorColor="White" OverlayFill="#512BD4" TextColor="White"/>
+
+        <core:SfBusyIndicator Title="Searching..." Grid.Row="2" Grid.Column="3" IsRunning="True" IndicatorColor="#e64c93">
+            <core:SfBusyIndicator.OverlayFill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#44e64c93"
+                          Offset="0.1" />
+                    <GradientStop Color="#AA9d40db"
+                          Offset="1.0" />
+                </RadialGradientBrush>
+            </core:SfBusyIndicator.OverlayFill>
+        </core:SfBusyIndicator>
+        <core:SfBusyIndicator Grid.Row="0" Grid.Column="4" AnimationType="CircularMaterial" DurationFactor="1" IsRunning="True"/>
+        <core:SfBusyIndicator Grid.Row="1" Grid.Column="4" AnimationType="CircularMaterial" SizeFactor="0.2" IsRunning="True"/>
+    </Grid>
+</ContentPage>
