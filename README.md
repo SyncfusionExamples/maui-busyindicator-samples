@@ -39,7 +39,7 @@ Syncfusion .NET MAUI controls are available in Nuget.org. To add .NET MAUI Busy 
 ```
 
 using Syncfusion.Maui.Core.Hosting;
-namespace AvatarView_ContactList;
+namespace BusyIndicator;
 
 public static class MauiProgram
 {
