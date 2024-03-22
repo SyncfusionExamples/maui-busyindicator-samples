@@ -27,7 +27,7 @@ Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensi
 ## License
 
 Syncfusion has no liability for any damage or consequence that may arise by using or viewing the samples. The samples are for demonstrative purposes, and if you choose to use or access the samples, you agree to not hold Syncfusion liable, in any form, for any damage that is related to use, for accessing, or viewing the samples. By accessing, viewing, or seeing the samples, you acknowledge and agree Syncfusion’s samples will not allow you seek injunctive relief in any form for any claim related to the sample. If you do not agree to this, do not view, access, utilize, or otherwise do anything with Syncfusion’s samples.
-# Adding a .NET MAUI Busy Indicator reference
+## Adding a .NET MAUI Busy Indicator reference
 Syncfusion .NET MAUI controls are available in Nuget.org. To add .NET MAUI Busy Indicator to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Maui.Core and then install it.
 **Step 1**: Create a .NET MAUI application project in Visual Studio 2022.
 
