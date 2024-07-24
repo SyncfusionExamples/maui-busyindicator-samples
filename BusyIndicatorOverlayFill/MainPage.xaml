@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BusyIndicatorOverlayFill.MainPage"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core">
+
+    <core:SfBusyIndicator x:Name="busyIndicator" 
+                          AnimationType="LinearMaterial" 
+                          IndicatorColor="Purple">
+        <core:SfBusyIndicator.OverlayFill >
+            <Color x:FactoryMethod="FromRgba">
+                <x:Arguments>
+                    <x:Int32>250</x:Int32>
+                    <x:Int32>105</x:Int32>
+                    <x:Int32>180</x:Int32>
+                    <x:Int32>155</x:Int32>
+                </x:Arguments>
+            </Color>
+        </core:SfBusyIndicator.OverlayFill>
+        <core:SfBusyIndicator.Content>
+            <ListView x:Name="listView" 
+                      VerticalOptions="Center"
+                      HorizontalOptions="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Margin="10,5" >
+                                <Label 
+                                    FontSize="16" 
+                                    Text="{Binding}"
+                                    HorizontalOptions="Center"
+                                    TextColor="#666666"
+                                    VerticalOptions="Start" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </core:SfBusyIndicator.Content>
+    </core:SfBusyIndicator>
+</ContentPage>
